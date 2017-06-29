@@ -106,6 +106,36 @@ namespace ConditionalsPracticeProblems
                 Console.WriteLine("You choose zero....all those numbers to choose from and thats what you pick. Tisk Tisk.");
             }
 
+            //vowel or consonant
+            Console.WriteLine("Please enter a letter.");
+            string letter = Console.ReadLine();
+
+            switch (letter)
+            {
+                case "a":
+                    Console.WriteLine("{0} is a vowel.", letter);
+                    break;
+                case "e":
+                    Console.WriteLine("{0} is a vowel.", letter);
+                    break;
+                case "i":
+                    Console.WriteLine("{0} is a vowel.", letter);
+                    break;
+                case "o":
+                    Console.WriteLine("{0} is a vowel.", letter);
+                    break;
+                case "u":
+                    Console.WriteLine("{0} is a vowel.", letter);
+                    break;
+                case "y":
+                    Console.WriteLine("{0} is a vowel sometimes.", letter);
+                    break;
+                default:
+                    Console.WriteLine("{0} is a consonant.",letter);
+                    break;
+            }
+
+
    
         }
     }
