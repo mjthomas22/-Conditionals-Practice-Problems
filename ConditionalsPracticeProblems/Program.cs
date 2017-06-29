@@ -68,7 +68,24 @@ namespace ConditionalsPracticeProblems
             {
                 Console.WriteLine("The integers {0} and {1} are in fact not equal.", first, second);
             }
-            
+
+            //ask the user for a number
+            Console.WriteLine("Please give me a number.");
+            double eoNumber = double.Parse(Console.ReadLine());
+
+            double numberCheck = eoNumber % 2;
+
+            if (numberCheck == 0)
+            {
+                Console.WriteLine("The number {0} is even.", eoNumber);
+            }
+            else
+            {
+                Console.WriteLine("The number {0} is odd.", eoNumber);
+            }
+
+            //tell them if that number is odd or even
+
    
         }
     }
