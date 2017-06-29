@@ -86,6 +86,26 @@ namespace ConditionalsPracticeProblems
 
             //tell them if that number is odd or even
 
+            //ask the user for a number and tell them if it is positive or negitive
+            Console.WriteLine("I can not tell if you are a positive or a negative person, but i can tell you about numbers.");
+            Console.WriteLine("Please enter any number positive or negative and I will magicly know which is which.");
+            double pnNumber = double.Parse(Console.ReadLine());
+
+            if (pnNumber > 0)
+            {
+                Console.WriteLine("I hope your as positive as {0}", pnNumber);
+            }
+            else if (pnNumber < 0)
+            {
+                Console.WriteLine("I hope your not as negitive as {0}", pnNumber);
+            }
+
+            //what happens if that number is zero
+            else
+            {
+                Console.WriteLine("You choose zero....all those numbers to choose from and thats what you pick. Tisk Tisk.");
+            }
+
    
         }
     }
