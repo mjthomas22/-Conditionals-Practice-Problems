@@ -11,14 +11,24 @@ namespace ConditionalsPracticeProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Fizz! Buzz! or Bust!!!");
-            Console.WriteLine("To play we are going to need you to pick two numbers.");
+            Console.WriteLine("To play we are going to need you to pick two numbers between 1 and 9");
 
             //Ask user for 2 numbers 
             Console.WriteLine("Please kindly enter the first number, and remember whole numbers only please.");
             int firstNumber = int.Parse(Console.ReadLine());
 
+            if (firstNumber < 1 || firstNumber > 9)
+            {
+                Console.WriteLine("Next time please follow instructions.");
+            }
+
             Console.WriteLine("Now please enter your second number.");
             int secondNumber = int.Parse(Console.ReadLine());
+
+            if (secondNumber < 1 || secondNumber > 9)
+            {
+                Console.WriteLine("Next time please follow instructions.");
+            }
 
             //Player picks his number
             Console.WriteLine("Now that you have picked your first two numbers it all comes down to this!");
@@ -184,10 +194,10 @@ namespace ConditionalsPracticeProblems
             Console.WriteLine("Enter the fourth number.");
             int meanNumber4 = int.Parse(Console.ReadLine());
 
-            int meanTotal = meanNumber1 + meanNumber2 + meanNumber3 + meanNumber4;
+            int meanTotal = (meanNumber1 + meanNumber2 + meanNumber3 + meanNumber4)/4;
             int mean = meanTotal / 4;
 
-            Console.WriteLine("Your Average is {0}", mean);
+            Console.WriteLine("Your Average is {0}", meanTotal);
 
 
         }
