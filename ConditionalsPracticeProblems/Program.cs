@@ -131,12 +131,44 @@ namespace ConditionalsPracticeProblems
                     Console.WriteLine("{0} is a vowel sometimes.", letter);
                     break;
                 default:
-                    Console.WriteLine("{0} is a consonant.",letter);
+                    Console.WriteLine("{0} is a consonant.", letter);
                     break;
             }
 
+            Console.WriteLine("Find the biggest number.");
 
-   
+            //Ask users for numbers
+            Console.WriteLine("Please enter a number.");
+            int sizeOne = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Please enter a second number.");
+            int sizeTwo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter a third number.");
+            int sizeThree = int.Parse(Console.ReadLine());
+
+            if (sizeOne > sizeTwo)
+            {
+                if (sizeOne > sizeThree)
+                {
+                    Console.WriteLine("The biggest number is {0}.", sizeOne);
+                }
+                else
+                {
+                    Console.WriteLine("The biggest number is {0}", sizeThree);
+                }
+            }
+            else
+            {
+                if (sizeTwo > sizeThree)
+                {
+                    Console.WriteLine("The biggest number is {0}", sizeTwo);
+                }
+                else
+                {
+                    Console.WriteLine("The biggest number is {0}", sizeThree);
+                }
+            }
         }
     }
 }
