@@ -140,7 +140,7 @@ namespace ConditionalsPracticeProblems
             //Ask users for numbers
             Console.WriteLine("Please enter a number.");
             int sizeOne = int.Parse(Console.ReadLine());
-            
+
             Console.WriteLine("Please enter a second number.");
             int sizeTwo = int.Parse(Console.ReadLine());
 
@@ -169,6 +169,27 @@ namespace ConditionalsPracticeProblems
                     Console.WriteLine("The biggest number is {0}", sizeThree);
                 }
             }
+
+
+            Console.WriteLine("Lets figure out your average.");
+            Console.WriteLine("Enter the first number.");
+            int meanNumber1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number.");
+            int meanNumber2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number.");
+            int meanNumber3 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the fourth number.");
+            int meanNumber4 = int.Parse(Console.ReadLine());
+
+            int meanTotal = meanNumber1 + meanNumber2 + meanNumber3 + meanNumber4;
+            int mean = meanTotal / 4;
+
+            Console.WriteLine("Your Average is {0}", mean);
+
+
         }
     }
 }
