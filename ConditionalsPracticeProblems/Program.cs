@@ -45,12 +45,31 @@ namespace ConditionalsPracticeProblems
             }
             else
             {
-                Console.WriteLine("{0} better luck next time!",playersNumber);
+                Console.WriteLine("{0} better luck next time!", playersNumber);
 
             }
 
+            //Code are these numbers equal
+            Console.WriteLine("Have you ever been unsure on whether two integers are equal, wonder no more.");
+
+            //Ask the user for two integers
+            Console.WriteLine("Please enter the first integer in question.");
+            int first = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter the second integer in question.");
+            int second = int.Parse(Console.ReadLine());
+
+            //check to see if they are equal and inform the user if they are equal or not
+            if (first == second)
+            {
+                Console.WriteLine("The integers {0} and {1} are in fact equal.", first, second);
+            }
+            else
+            {
+                Console.WriteLine("The integers {0} and {1} are in fact not equal.", first, second);
+            }
             
-            //if the test fails print test number
+   
         }
     }
 }
